@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>First Name:</b>
+  <%= @registration.first_name %>
+</p>
+<p>
+  <b>Last Name:</b>
+  <%= @registration.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration), :class => "btn btn-default" %>
+<%= link_to 'Back', orientations_path, :class => "btn btn-default" %>

@@ -1,0 +1,42 @@
+<%= form_for(@registration) do |f| %>
+  <% if @registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% @registration.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.hidden_field :orientation_id %>
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label 'Student ID' %>
+    <div class="alert alert-info"><strong>NOTE:</strong> To find your student ID number, please refer to the e-mail you received regarding your A-B Tech WebAdvisor and Email Accounts.</div>
+    <%= f.text_field :student_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label 'Program of Interest' %>
+    <%= f.text_field :program %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Register", :class => "btn btn-primary" %>
+  </div>
+<% end %>

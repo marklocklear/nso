@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AB-Tech</title>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+    <%= analytics_init if Rails.env.production? %>
+  </head>
+	<% if current_user and current_user.admin? and current_user.email == 'helpdesk@abtech.edu' %>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse">
+						<ul class="nav">
+					<li class="dropdown" id="menu1">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">Registrations<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "View All Registrations", all_registrations_path %></li>
+							<li><%= link_to "Search by Date, Name or ID", search_path %></li>
+						</ul>
+					</li>
+					<li><%= link_to "Log Out", logout_path %></li>
+					<li><%= link_to "About", '/about' %></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<% else %>
+	<% if current_user and current_user.admin? %>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">NSO@ABtech</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+        <li class="dropdown" id="menu1">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">Registrations<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Create a New Seated Registration", new_orientation_path %></li>
+            <li><%= link_to "View Online Registrations", registrations_path %></li>
+            <li><%= link_to "View All Registrations", all_registrations_path %></li>
+						<li><%= link_to "Search by Date, Name or ID", search_path %></li>
+          </ul>
+        </li>
+        <li class="dropdown" id="menu2">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">Emails & Text<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/1">Scheduling Text</a></li>
+            <li><a href="/pages/2">Scheduling Email</a></li>
+            <li><a href="/pages/3">Online Registration Text</a></li>
+            <li><a href="/pages/4">Online Registration Email</a></li>
+            <li><a href="/pages/5">Cancel Verification Email</a></li>
+            <li><a href="/pages/6">Cancel Confirmation Text</a></li>
+            <li><a href="/pages/7">Reminder Email</a></li>
+          </ul>
+        </li>
+				<li class="dropdown" id="menu3">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">Reports<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "By Date", reports_path %></li>
+          </ul>
+        </li>
+        <li><%= link_to "Log Out", logout_path %></li>
+  			<li><%= link_to "About", '/about' %></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+  <body>
+    <div id="container">
+        <% flash.each do |key, value| %>
+          <div class="<%= flash_class(key) %> fade in">
+            <a href="#" data-dismiss="alert" class="close">×</a>
+              <%= value %>
+          </div>
+        <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

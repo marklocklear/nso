@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Date:</b>
+  <%= @orientation.class_date %>
+</p>
+<p>
+  <b>Time:</b>
+  <%= @orientation.class_time %>
+</p>
+<p>
+  <b>Slots:</b>
+  <%= @orientation.seats %>
+</p>
+
+
+<%= link_to 'Edit', edit_orientation_path(@orientation), :class => "btn btn-default" %>&nbsp;
+<%= link_to 'Back', orientations_path, :class => "btn btn-default" %>

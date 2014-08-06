@@ -1,0 +1,13 @@
+<%= form_tag "reports/find_by_date" do %>
+<div class="from_date">
+  Start Date
+  <%= text_field_tag "from_date" %>
+</div>
+<div class="to_date">
+  End Date
+  <%= text_field_tag "to_date" %>
+</div>
+<div id="submit_button">
+	<%= submit_tag 'Generate Report', :class => "btn btn-primary" %>
+</div>
+<% end %>

@@ -1,0 +1,2 @@
+<%= Mustache.render(Page.find_by_name("Cancel Confirmation Email").content, {:registration => @registration }).html_safe %>
+<td><%= link_to 'Yes. Cancel my Registration', registration_path(@registration), :class => "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>

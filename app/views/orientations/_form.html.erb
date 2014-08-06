@@ -1,0 +1,52 @@
+<%= form_for(@orientation) do |f| %>
+  <% if @orientation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@orientation.errors.count, "error") %> prohibited this orientation from being saved:</h2>
+
+      <ul>
+      <% @orientation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="from_date">
+  <div id="from_date_text"></div>
+		<input type="text" id="from_date" name="from_date"></input>
+    <div id="date_error"></div>
+  </div>
+ <div class="field">
+    Single <%= radio_button_tag 'selection', 'single', true %>
+    Repeating Dates <%= radio_button_tag 'selection', 'repeating' %>
+  </div>
+  <div class="multiple_dates">
+		<p>To Date</p>
+    <%= text_field_tag "to_date" %>
+		</br>
+	Days to Exclude
+	<% Date::DAYNAMES.each_with_index do |day_name, wday| %>
+		<% if day_name == "Sunday" || day_name == "Saturday" %>
+			<%= check_box_tag "ignored_days[]", wday, true %>
+		<% else %>
+			<%= check_box_tag "ignored_days[]", wday %>
+		<% end %>
+		<%= day_name %>
+	<% end %>
+  </div>
+  <div class="field">
+    <%= f.label :class_time %>
+    <%= f.text_field :class_time %>
+  </div>
+  <div class="field">
+    <%= f.label :seats %>
+    <%= f.number_field :seats %>
+  </div>
+ 	<div class="field">
+    <%= f.label :Location%>
+		<%= f.select :location, options_for_select(['Bailey 021', 'Balsam 217'], @orientation.location) %>
+
+  </div>
+  <div id="submit_button">
+    <%= f.submit "Create Orientation", :class => "btn btn-primary" %>
+  </div>
+<% end %>

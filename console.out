@@ -1,0 +1,419 @@
+=> #<File:console.out>
+---
+- !ruby/object:Registration
+  attributes:
+    id: 1164
+    orientation_id: 33
+    first_name: Michelle
+    last_name: Dorosiewicz
+    email: mdorosiewicz@aol.com
+    student_id: '1187050'
+    phone: 336-847-0487
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-11 19:31:07.000000000 Z
+    updated_at: 2014-07-11 19:31:07.000000000 Z
+    program: ! 'Arts '
+- !ruby/object:Registration
+  attributes:
+    id: 1298
+    orientation_id: 33
+    first_name: Patrick
+    last_name: McDowell
+    email: pmcdowell@live.com
+    student_id: '1185910'
+    phone: 828-980-2109
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-14 13:48:10.000000000 Z
+    updated_at: 2014-07-14 13:48:10.000000000 Z
+    program: medical coding
+- !ruby/object:Registration
+  attributes:
+    id: 1311
+    orientation_id: 33
+    first_name: Desiree
+    last_name: Johnson
+    email: desireecjohnson@students.abtech.edu
+    student_id: '1145782'
+    phone: 404-940-0022
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-14 14:18:27.000000000 Z
+    updated_at: 2014-07-14 14:18:27.000000000 Z
+    program: Culinary Arts
+- !ruby/object:Registration
+  attributes:
+    id: 1405
+    orientation_id: 33
+    first_name: Pablo
+    last_name: Alday Jr
+    email: pablojralday@gmail.com
+    student_id: '1179416'
+    phone: '8287028829'
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-15 01:35:38.000000000 Z
+    updated_at: 2014-07-15 01:35:38.000000000 Z
+    program: Business
+- !ruby/object:Registration
+  attributes:
+    id: 1428
+    orientation_id: 33
+    first_name: Andrew
+    last_name: Greene
+    email: greene86margie@aol.com
+    student_id: '1155524'
+    phone: 828 777 6421
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-15 15:02:18.000000000 Z
+    updated_at: 2014-07-15 15:02:18.000000000 Z
+    program: automotive
+- !ruby/object:Registration
+  attributes:
+    id: 1466
+    orientation_id: 33
+    first_name: Dante
+    last_name: Brown
+    email: dante.brown61@yahoo.com
+    student_id: '1181366'
+    phone: '8289890740'
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-15 23:07:27.000000000 Z
+    updated_at: 2014-07-15 23:07:27.000000000 Z
+    program: Transfer program
+- !ruby/object:Registration
+  attributes:
+    id: 1472
+    orientation_id: 33
+    first_name: ! 'Tia '
+    last_name: Plummer
+    email: tiaplummer2@gmail.com
+    student_id: '1776469'
+    phone: 828-9674-5005
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 00:11:06.000000000 Z
+    updated_at: 2014-07-16 00:11:06.000000000 Z
+    program: Nursing
+- !ruby/object:Registration
+  attributes:
+    id: 1473
+    orientation_id: 33
+    first_name: Valerie
+    last_name: Verno
+    email: Valjv5191@gmail.com
+    student_id: '1108412'
+    phone: (828)424-1458
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 00:51:47.000000000 Z
+    updated_at: 2014-07-16 00:51:47.000000000 Z
+    program: Esthetics
+- !ruby/object:Registration
+  attributes:
+    id: 1492
+    orientation_id: 33
+    first_name: Ana
+    last_name: Alegria
+    email: anaalegrias121@gmail.com
+    student_id: '1168346'
+    phone: 828-483-5349
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 15:34:52.000000000 Z
+    updated_at: 2014-07-16 15:34:52.000000000 Z
+    program: nursing
+- !ruby/object:Registration
+  attributes:
+    id: 1504
+    orientation_id: 33
+    first_name: Charles
+    last_name: Cline
+    email: charlesbcline@students.abtech.edu
+    student_id: '1172562'
+    phone: 919-412-6676
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 16:56:05.000000000 Z
+    updated_at: 2014-07-16 16:56:05.000000000 Z
+    program: undecided maybe business
+- !ruby/object:Registration
+  attributes:
+    id: 1517
+    orientation_id: 33
+    first_name: Christopher
+    last_name: Waugh
+    email: chris_waugh27@hotmail.com
+    student_id: '1183098'
+    phone: 910-257-5190
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 18:07:26.000000000 Z
+    updated_at: 2014-07-16 18:07:26.000000000 Z
+    program: ''
+- !ruby/object:Registration
+  attributes:
+    id: 1519
+    orientation_id: 33
+    first_name: Ashley
+    last_name: Jacobs
+    email: djajsj01@yahoo.com
+    student_id: '1077938'
+    phone: 828-683-9833
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 18:18:49.000000000 Z
+    updated_at: 2014-07-16 18:18:49.000000000 Z
+    program: ''
+- !ruby/object:Registration
+  attributes:
+    id: 1528
+    orientation_id: 33
+    first_name: Corey
+    last_name: Hutchinson
+    email: vikings199@yahoo.com
+    student_id: '1166744'
+    phone: 828-242-3009
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 20:33:54.000000000 Z
+    updated_at: 2014-07-16 20:33:54.000000000 Z
+    program: construction
+- !ruby/object:Registration
+  attributes:
+    id: 1542
+    orientation_id: 33
+    first_name: Robert
+    last_name: Walker
+    email: robertwalkeriv@yahoo.com
+    student_id: '1187083'
+    phone: (828) 450-8926
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-16 22:49:00.000000000 Z
+    updated_at: 2014-07-16 22:49:00.000000000 Z
+    program: ''
+- !ruby/object:Registration
+  attributes:
+    id: 1545
+    orientation_id: 33
+    first_name: Maria
+    last_name: Tamayo-Olmedo
+    email: mariajolmedo@student.abtech.edu
+    student_id: '1166273'
+    phone: '8286740542'
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: true
+    created_at: 2014-07-16 23:10:14.000000000 Z
+    updated_at: 2014-07-17 16:42:57.000000000 Z
+    program: Dental Hygiene
+- !ruby/object:Registration
+  attributes:
+    id: 1548
+    orientation_id: 33
+    first_name: Tearany
+    last_name: Stepp
+    email: Tstepp2323@gmail.com
+    student_id: '1174130'
+    phone: (828)423-3003
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 00:03:32.000000000 Z
+    updated_at: 2014-07-17 00:03:32.000000000 Z
+    program: ''
+- !ruby/object:Registration
+  attributes:
+    id: 1560
+    orientation_id: 33
+    first_name: Kellie
+    last_name: Place
+    email: kellielplace@students.abtech.edu
+    student_id: '1186929'
+    phone: 828-423-1108
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 14:05:51.000000000 Z
+    updated_at: 2014-07-17 14:05:51.000000000 Z
+    program: digital media
+- !ruby/object:Registration
+  attributes:
+    id: 1561
+    orientation_id: 33
+    first_name: Fallon
+    last_name: Molony
+    email: molonyfallon@yahoo.com
+    student_id: '1173100'
+    phone: 828-989-8290
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 14:09:10.000000000 Z
+    updated_at: 2014-07-17 14:09:10.000000000 Z
+    program: ''
+- !ruby/object:Registration
+  attributes:
+    id: 1563
+    orientation_id: 33
+    first_name: Mallory
+    last_name: Gankhuyag
+    email: m.gankhuyag1020@gmail.com
+    student_id: '1152516'
+    phone: 828-505-9192
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 14:34:28.000000000 Z
+    updated_at: 2014-07-17 14:34:28.000000000 Z
+    program: general ed for pharmacy school
+- !ruby/object:Registration
+  attributes:
+    id: 1567
+    orientation_id: 33
+    first_name: andrew
+    last_name: broz
+    email: ab@andrewbroz.com
+    student_id: '1172999'
+    phone: 917-312-8864
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 14:51:56.000000000 Z
+    updated_at: 2014-07-17 14:51:56.000000000 Z
+    program: cosmetology
+- !ruby/object:Registration
+  attributes:
+    id: 1570
+    orientation_id: 33
+    first_name: Joy
+    last_name: Campbell
+    email: jmichelecampbell@gmail.com
+    student_id: '1134400'
+    phone: 334-315-2825
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 15:26:47.000000000 Z
+    updated_at: 2014-07-17 15:26:47.000000000 Z
+    program: dental hygiene
+- !ruby/object:Registration
+  attributes:
+    id: 1571
+    orientation_id: 33
+    first_name: Shelby
+    last_name: Crow
+    email: shelbyjcrow@students.abtech.edu
+    student_id: '1161334'
+    phone: 828-280-5944
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 15:29:49.000000000 Z
+    updated_at: 2014-07-17 15:29:49.000000000 Z
+    program: Human Services Technology
+- !ruby/object:Registration
+  attributes:
+    id: 1574
+    orientation_id: 33
+    first_name: Nicole
+    last_name: Goodlet
+    email: ladybyrd1986@gmail.com
+    student_id: 0859106
+    phone: 828-242-6574
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 15:42:04.000000000 Z
+    updated_at: 2014-07-17 15:42:04.000000000 Z
+    program: EMS
+- !ruby/object:Registration
+  attributes:
+    id: 1578
+    orientation_id: 33
+    first_name: Devon
+    last_name: Smith
+    email: ddillingham06@yahoo.com
+    student_id: '1102701'
+    phone: 828 318 4632
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 16:09:58.000000000 Z
+    updated_at: 2014-07-17 16:09:58.000000000 Z
+    program: AA
+- !ruby/object:Registration
+  attributes:
+    id: 1589
+    orientation_id: 33
+    first_name: ! 'jonta '
+    last_name: dunlap
+    email: heatherjonta2013@yahoo.com
+    student_id: 0685217
+    phone: '8286200173'
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 17:15:38.000000000 Z
+    updated_at: 2014-07-17 17:15:38.000000000 Z
+    program: Electronic systems tech
+- !ruby/object:Registration
+  attributes:
+    id: 1590
+    orientation_id: 33
+    first_name: Morgan
+    last_name: Sawyer
+    email: 1456.morgan@gmail.com
+    student_id: '1184889'
+    phone: 828-699-1229
+    registration_cancellation_token: 
+    registration_cancelled_at: 
+    checked_in: false
+    cancelled: false
+    created_at: 2014-07-17 17:15:38.000000000 Z
+    updated_at: 2014-07-17 17:15:38.000000000 Z
+    program: HAVC
+=> nil

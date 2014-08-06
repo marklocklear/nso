@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orientation_id: 1
+  last_name: MyString
+
+two:
+  orientation_id: 1
+  last_name: MyString

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @page.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @page.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page), :class => 'btn btn-default' %>
+<%= link_to 'Back', pages_path, :class => 'btn btn-default' %>

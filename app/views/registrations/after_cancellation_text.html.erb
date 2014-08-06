@@ -1,0 +1,2 @@
+<%= Mustache.render(Page.find_by_name("Cancel Confirmation Text").content, {:registration => @registration }).html_safe %>
+<%= link_to 'Back', orientations_path, :class => 'btn btn-default' %>

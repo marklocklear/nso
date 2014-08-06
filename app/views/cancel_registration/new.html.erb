@@ -1,0 +1,9 @@
+<%= form_tag cancel_registration_path, :method => :post do %>
+  <div class="field">
+		If you would like to cancel a registration please enter your registration email below. An email will be
+		sent with further instructions.
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="actions"><%= submit_tag "Send Email", :class => "btn btn-primary" %></div>
+<% end %>

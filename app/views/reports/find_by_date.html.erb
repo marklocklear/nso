@@ -1,0 +1,26 @@
+<h1>Report</h1>
+<h2 class="well"><%= @start_date + " to " + @end_date %> </h2>
+
+<table class="table table-hover table-striped table-bordered">
+  <tr>
+    <td>Total number of seats</td>
+    <td><%= @total_seats.to_s %></td>
+  </tr>
+  <tr>
+    <td>Total number of registered seats</td>
+    <td><%= @registrations.count %></td>
+  </tr>
+  <tr>
+    <td>Total number of cancelled registrations</td>
+    <td><%= @canceled_registrations.count %></td>
+  </tr>
+  <tr>
+    <td>Total number of completed registrations</td>
+    <td><%= @attended_registrations.count %></td>
+  </tr>
+  <tr>
+    <td>Total number of no shows</td>
+    <td><%= @no_shows.count %></td>
+  </tr>
+
+</table>

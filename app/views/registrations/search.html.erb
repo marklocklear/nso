@@ -1,0 +1,37 @@
+<h1>Search for Registrations</h1>
+<%= form_tag "registrations/find_by_class_date" do %>
+<div class="class_date">
+  Class Date
+  <%= text_field_tag "class_date" %>
+</div>
+<div id="submit_button">
+	<%= submit_tag 'Class Date', :class => "btn btn-primary" %>
+</div>
+<% end %>
+<%= form_tag "registrations/find_by_registration_date" do %>
+<div class="registration_date">
+  Registration Date
+  <%= text_field_tag "registration_date" %>
+</div>
+<div id="submit_button">
+	<%= submit_tag 'Registration Date', :class => "btn btn-primary" %>
+</div>
+<% end %>
+<%= form_tag "registrations/find_by_student_id" do %>
+<div class="student_id">
+  Student ID
+  <%= text_field_tag "student_id" %>
+</div>
+<div id="submit_button">
+	<%= submit_tag 'Student ID', :class => "btn btn-primary" %>
+</div>
+<% end %>
+<%= form_tag "registrations/find_by_name " do %>
+<div class="name">
+  First or Last Name
+  <%= text_field_tag "name", nil, placeholder: 'complete or partial name'%>
+</div>
+<div id="submit_button">
+	<%= submit_tag 'Name', :class => "btn btn-primary" %>
+</div>
+<% end %>

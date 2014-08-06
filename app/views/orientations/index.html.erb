@@ -1,0 +1,40 @@
+<div id="orientation">
+<div id="legend">
+  <i class="fa fa-check"></i>&nbsp;<h4>Available</h4>&nbsp;&nbsp;
+  <i class="fa fa-minus-circle">&nbsp;</i><h4>Closed</h4>
+</div>
+
+ <h2 id="month">
+    <%= link_to "<", date: @date.prev_month %>
+    <%= @date.strftime("%B %Y") %>
+    <%= link_to ">", date: @date.next_month %>
+  </h2>
+  <%= calendar @date do |date| %>
+    <%= date.day %>
+    <% if @orientation_by_date[date] %>
+      <ul class="orientation-time">
+        <% @orientation_by_date[date].each do |orientation| %>
+   				<% if current_user %>
+						<% if orientation.active? and Orientation.is_not_past(orientation) %>
+          		<li class="class-available"><i class="fa fa-check"></i>&nbsp;
+							<%= link_to orientation.class_time, new_orientation_registration_path(orientation) %>
+									(<%= orientation.current_number_seats %>/<%= orientation.seats %>)</li>
+        		<% else %>
+							<li class="class-closed"><i class="fa fa-minus-circle"></i>&nbsp;<%= orientation.class_time %>
+									(<%= orientation.current_number_seats %>/<%= orientation.seats %>)</li>
+        		<% end %>
+						<submit class="btn btn-mini" type="button">
+						<%= link_to "VIEW", orientation_registrations_path(orientation) %></submit></li>
+        	<% else %>
+						<% if orientation.active? and Orientation.is_not_past(orientation) %>
+          		<li class="class-available"><i class="fa fa-check"></i>&nbsp;
+							<%= link_to orientation.class_time, new_orientation_registration_path(orientation) %>
+        		<% else %>
+							<li class="class-closed"><i class="fa fa-minus-circle"></i>&nbsp;<%= orientation.class_time %></li>
+        		<% end %>
+        	<% end %>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</div>

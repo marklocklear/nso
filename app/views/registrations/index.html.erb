@@ -1,0 +1,59 @@
+<% if @orientation != nil %>
+	<h3>Registrations for NSO session on
+			<%= @orientation.class_date %> at <%= @orientation.class_time %>( <%= @orientation.location %> )</h3>
+	<div class="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>NOTE!</strong> Cancelled registrations are not shown.
+    </div>
+<% end %>
+<table class="table table-hover table-striped table-bordered">
+  <tr>
+		<th>Registration Date</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>StudentID</th>
+    <th>Program</th>
+		<% if @orientation != nil %>
+    	<th>Present</th>
+		<% end %>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @registrations.each do |registration| %>
+  <tr>
+    <td><%= registration.created_at.to_date %></td>
+    <td><%= registration.first_name %></td>
+    <td><%= registration.last_name %></td>
+    <td><%= registration.email %></td>
+    <td><%= registration.phone %></td>
+    <td><%= registration.student_id %></td>
+    <td><%= registration.program %></td>
+		<% if @orientation != nil %>
+			<td><%= check_box_tag 'checked_in', registration.id , registration.checked_in, 
+			:class => "check-in", disabled: (@orientation.class_date < Date.today - 7) %></td>
+		<% end %>
+		<% if @orientation != nil && @orientation.class_date > Date.today - 1 %>
+    	<td><%= link_to 'Edit', edit_registration_path(registration), :class => 'btn btn-warning' %></td>
+			<% if registration.orientation != nil %>
+				<td><%= link_to 'Destroy', registration_path(registration),
+					:class => 'btn btn-danger', method: :delete,
+					data: { confirm: 'Student will be notified of this cancelation via email.' } %>
+				</td>
+			<% end %>
+		<% end %>
+  </tr>
+<% end %>
+</table>
+<br />
+<% if @orientation != nil %>
+	<%= link_to 'Create a New Registration for this session', new_orientation_registration_path, :class => 'btn' %>&nbsp;
+	<%= link_to("Delete this Registration", @orientation, method: :delete, :class => 'action btn btn-danger', :confirm =>
+						'You are about to destroy this orientation. A cancellation email will be sent to all students
+						 registered for this session.') %>&nbsp;
+	<%= link_to 'Edit Session', edit_orientation_path(@orientation), :class => 'btn btn-default' %>
+<% end %>
+<%= will_paginate @registrations %>
+<%= link_to 'Show Calendar', orientations_path, :class => 'btn btn-default' %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  time: 
+  slots: 1
+
+two:
+  time: 
+  slots: 1
